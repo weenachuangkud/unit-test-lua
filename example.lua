@@ -1,4 +1,4 @@
-local test = require 'unit-test'
+local test = require 'u-test'
 
 -- You can use 'assert' to check invariants.
 test.hello_world = function ()

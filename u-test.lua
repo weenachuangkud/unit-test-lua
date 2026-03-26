@@ -227,13 +227,11 @@ api.summary = function ()
     local nfailed = #failed_list
     if nfailed == 0 then
         log(passed_tag .. " " .. ntests .. " test(s)")
-        os.exit(0)
     else
         log(failed_tag .. " " .. nfailed .. " out of " .. ntests .. ":")
         for _, test_name in ipairs(failed_list) do
             log(failed_tag .. "\t" .. test_name)
         end
-        os.exit(1)
     end
 end
 
