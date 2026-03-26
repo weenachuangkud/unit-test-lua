@@ -3,7 +3,7 @@ do
     LUA_VERSION = major * 10 + minor
 end
 
-local t = require "u-test"
+local t = require "unit-test"
 
 t.all_assertions = function ()
     t.equal(1,1)
